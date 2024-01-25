@@ -40,7 +40,7 @@ class MyListPage extends StatelessWidget {
         title: const Text('ListView'),
       ),
       body: Container(
-          child: ListView.builder(
+          child: ListView.separated(
               padding: const EdgeInsets.all(8),
               itemCount: entries.length,
               itemBuilder: (BuildContext context, int index) {
@@ -54,7 +54,9 @@ class MyListPage extends StatelessWidget {
                     ),)),
                   ),
                 );
-              })),
+              },
+            separatorBuilder: (BuildContext context, int index) => const Divider(),
+          )),
       // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
