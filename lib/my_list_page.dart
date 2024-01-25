@@ -41,7 +41,6 @@ class MyListPage extends StatelessWidget {
       ),
       body: Container(
           child: ListView.separated(
-              padding: const EdgeInsets.all(8),
               itemCount: entries.length,
               itemBuilder: (BuildContext context, int index) {
                 return Padding(

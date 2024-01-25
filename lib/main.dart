@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:listview_demo/my_list_page.dart';
 
+import 'my_bird_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MyListPage(),
+      home: MyBirdPage(),
     );
   }
 }
